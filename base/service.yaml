@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: minta-gitops
+spec:
+  selector:
+    app: minta-gitops
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: minta-gitops
+  labels:
+    app: minta-gitops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: minta-gitops
+  template:
+    metadata:
+      labels:
+        app: minta-gitops
+    spec:
+      containers:
+      - name: minta-gitops
+        image: minta-gitops
+        resources:
+          requests:
+            cpu: 200m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 128Mi
+        ports:
+        - containerPort: 8080
