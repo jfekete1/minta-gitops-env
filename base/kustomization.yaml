@@ -5,6 +5,9 @@ resources:
 - deployment.yaml
 - service.yaml
 images:
+- name: minta-gitops
+  newName: docker.io/feketej/minta-gitops
+  newTag: 8429d99c1da67d64baf2ceac07d967577fc65722
 - name: minta-gitops-app
   newName: docker.io/feketej/minta-gitops
   newTag: e8d7e7287928e458f0976ea777094206f5020bb5
