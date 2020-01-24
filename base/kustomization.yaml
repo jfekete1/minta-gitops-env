@@ -7,7 +7,7 @@ resources:
 images:
 - name: minta-gitops
   newName: docker.io/feketej/minta-gitops
-  newTag: 4273e6ebe893a3c7c23abdbdf1af0ace17bba12b
+  newTag: 6323b5f07f483228b7d13651f4899d39eb2a6cc5
 - name: minta-gitops-app
   newName: docker.io/feketej/minta-gitops
   newTag: e8d7e7287928e458f0976ea777094206f5020bb5
